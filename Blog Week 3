@@ -22,8 +22,8 @@ These trees are of course simple but start to become very long and convoluted th
 we have concrete syntax which should be the preffered language for humans.
 
 What does Concrete Syntax do and how does it work?
-Now to just setup my thought process we had in the abstract syntax equation mult (S(S(S(S O)))) (S(S O)). Using this multiplication equation of course gets you the right answer
-but it clearly takes a while to do out all the work, I would rather like to calculate 4 * 2 = 8. To do this in practice with a programming language we develop the idea of 
+Now to just set up my thought process we had in the abstract syntax equation mult (S(S(S(S O)))) (S(S O)), using this multiplication equation of course gets you the right answer
+but it clearly takes a while to do out all the work. I would rather like to calculate 4 * 2 = 8. To do this in practice with a programming language we develop the idea of 
 concrete syntax where I could quickly and easily write out calculations and not have to depend on the abstract definition of our functions. Instead we can use our current 
 way of doing calculations (using normal mathematical equations and symbols) by making use of parsing to translate our concrete syntax into abstract syntax so that the machine
 can compile the code and do our calculations. In the assingment we explored parsers by first writing a context free grammer as such:
