@@ -22,7 +22,7 @@ the stick by m)
 subtr :: NN -> NN -> NN
 subtr O n = O (If you have no stick and take away n length from a stick you will still have no stick)
 subtr n O = n (If you have a stick and break off no length from it, it will be the same)
-subtr (S n) (S m) = subtr n m (If you have two sticks of some random lengths and keep taking off 1 unit of length recursviley, you will be left with one stick of a 
+subtr (S n) (S m) = subtr n m (If you have two sticks of some random lengths and keep taking off 1 unit of length recursively, you will be left with one stick of a 
 specific length or no sticks if they are equal length)
 
 All in all this sort of idea is odd and may not make the most sense, but to me it seems to help knowing that mathematics and programming languages can always be taken 
