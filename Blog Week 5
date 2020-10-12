@@ -9,4 +9,7 @@ that this would never suffice as a programming langauge, however I felt this cha
 
 Once one looks at the concrete syntax of the Lambda calculus langauge they should note that it is setup in a way using expression from the previous assingment. This is 
 very useful and powerful for streamlining the calculator functions that we had created. Furthermore, the Lambda calculus syntax is so usefully abstract that it allows us to
-add many more functions to the calculator without having to worry about the organization or structure of the program. 
+add many more functions to the calculator without having to worry about the organization or structure of the program. Furthermore, this allows us to create long lines 
+of lambda calculus strings which will essentially act as a program. I guess the main idea is that if you are going to learn about how programming languages are built and structured
+you should start with the simplest program. If we think about the first computers ever created all they could really do was calculate these simple mathematical equations so 
+thats why we are beginning to learn from here. 
