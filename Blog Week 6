@@ -1,0 +1,4 @@
+Over the past week in Programming Languages we have learned about Abstract Reduction Systems (ARS) using Lambda Calculus as the model of rules to abstract. We learned that 
+ARSs that are confluent and terminating are sound abstract models for an algorithm or a programming language. At this point, we have coded a calculator that has an interpreter 
+thus making it easier for humans to use/read and it perserves readability for our machine. Now, the discrete mathematics that comes with an ARS seems to make sense to me, but 
+I wanted to explore how this will help us with coding in and of itself. 
