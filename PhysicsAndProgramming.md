@@ -12,11 +12,11 @@ I think comparing code to statements will be the best way to illustrate my idea:
 data NN = O | S NN  (If I am only working with natural numbers I either have a stick or I do not.)
 
 -- addition 
-'''
+```
 add :: NN -> NN -> NN
 add O n = n (If I add a stick to no stick I get a stick)
 add (S n) m = S (add n m) (If I put together 2 sticks it will be the 2 lengths of the sticks together)
-'''
+```
 -- multiplication
 mult :: NN -> NN -> NN
 mult O n = O (If I have no stick to lengthen by this other stick then I get no stick)
