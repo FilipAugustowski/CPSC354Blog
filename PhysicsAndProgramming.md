@@ -10,13 +10,12 @@ trying to delete nothing. The same can be said for a stick; if I have no stick s
 I think comparing code to statements will be the best way to illustrate my idea:
 
 data NN = O | S NN  (If I am only working with natural numbers I either have a stick or I do not.)
-
--- addition 
 ```
+-- addition 
 add :: NN -> NN -> NN
 add O n = n (If I add a stick to no stick I get a stick)
 add (S n) m = S (add n m) (If I put together 2 sticks it will be the 2 lengths of the sticks together)
-```
+
 -- multiplication
 mult :: NN -> NN -> NN
 mult O n = O (If I have no stick to lengthen by this other stick then I get no stick)
@@ -30,6 +29,7 @@ subtr O n = O (If you have no stick and take away n length from a stick you will
 subtr n O = n (If you have a stick and break off no length from it, it will be the same)
 subtr (S n) (S m) = subtr n m (If you have two sticks of some random lengths and keep taking off 1 unit of length recursively, you will be left with one stick of a 
 specific length or no sticks if they are equal length)
+```
 
 All in all this sort of idea is odd and may not make the most sense, but to me it seems to help knowing that mathematics and programming languages can always be taken 
 to physics or other mathematical displcines since all of these subjects seem to constrain or add to one another. 
