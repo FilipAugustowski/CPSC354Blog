@@ -2,9 +2,9 @@
 
 # Background
 
-To be honest this is not my first Programming Languages course. Two semesters ago I studied abroad in Korea and took Korean computer science courses that were taught in English.
+To be honest this is not my first Programming Languages course. Two semesters ago I studied abroad in Korea and took Korean computer science courses that were taught in English.  
 For the most part the lecture was done in English, however any questions that were asked were usually answered in Korean. I had to learn most things on my own and could not 
-depend on many others since I only knew 5 words of Korean. The language we used was called O'Caml and since the language was so obscure it was hard to find any sort of videos
+depend on many others since I only knew 5 words of Korean.  The language we used was called O'Caml and since the language was so obscure it was hard to find any sort of videos
 to work from. Oddly enough, it was quite normal for more than half the class to fail and that is what happened to me. 
 
 It took time, but I did well to figure out how to do a lot of the mathematical functions that we were given at the start of the course. Similar to our course here at Chapman we
