@@ -17,18 +17,18 @@ data NN = O | S NN  (If I am only working with natural numbers I either have a s
     add (S n) m = S (add n m) (If I put together 2 sticks it will be the 2 lengths of the sticks together)
 
 -- multiplication
-    mult :: NN -> NN -> NN
-    mult O n = O (If I have no stick to lengthen by this other stick then I get no stick)
-    mult (S O) n = n (If I have the smallest stick and add n many of that stick to itself it will give me the length n of the stick)
-    mult (S n) m = add m (mult n m) ((S N) is how many times I want to lengthen the stick, each time we decrease how many times we want to lengthen the stick we will lengthen
-    the stick by m)
+mult :: NN -> NN -> NN
+mult O n = O (If I have no stick to lengthen by this other stick then I get no stick)
+mult (S O) n = n (If I have the smallest stick and add n many of that stick to itself it will give me the length n of the stick)
+mult (S n) m = add m (mult n m) ((S N) is how many times I want to lengthen the stick, each time we decrease how many times we want to lengthen the stick we will lengthen
+the stick by m)
 
 -- subtract
-    subtr :: NN -> NN -> NN
-    subtr O n = O (If you have no stick and take away n length from a stick you will still have no stick)
-    subtr n O = n (If you have a stick and break off no length from it, it will be the same)
-    subtr (S n) (S m) = subtr n m (If you have two sticks of some random lengths and keep taking off 1 unit of length recursively, you will be left with one stick of a 
-    specific length or no sticks if they are equal length)
+subtr :: NN -> NN -> NN
+subtr O n = O (If you have no stick and take away n length from a stick you will still have no stick)
+subtr n O = n (If you have a stick and break off no length from it, it will be the same)
+subtr (S n) (S m) = subtr n m (If you have two sticks of some random lengths and keep taking off 1 unit of length recursively, you will be left with one stick of a 
+specific length or no sticks if they are equal length)
 
 All in all this sort of idea is odd and may not make the most sense, but to me it seems to help knowing that mathematics and programming languages can always be taken 
 to physics or other mathematical displcines since all of these subjects seem to constrain or add to one another. 
