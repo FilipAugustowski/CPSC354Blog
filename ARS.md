@@ -1,4 +1,4 @@
-Sources: https://ir.cwi.nl/pub/29552/1901.10773.pdf (1)
+# Abstract Reduction Systems
 
 Over the past week in Programming Languages we have learned about Abstract Reduction Systems (ARS) using Lambda Calculus as the model of rules to abstract. We learned that 
 ARSs that are confluent and terminating are sound abstract models for an algorithm or a programming language. At this point, we have coded a calculator that has an interpreter 
@@ -28,3 +28,5 @@ function will break such as checking if the player is grounded, rotating the pla
 I will create a function that does not terminate to a value or I create a loop that does not terminate and it has actually made my computer crash. I find that it is very 
 interesting that these general concepts expand to all parts of the coding world. I think the only thing that I am unsure of is how an ARS takes form in a program, does it 
 takes its form in the parser, the interpreter, in normal code, or the systen as a whole is an ARS and together its elements work with one another to justify this definition.
+
+Sources: https://ir.cwi.nl/pub/29552/1901.10773.pdf (1)
