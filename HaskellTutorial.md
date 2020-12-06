@@ -27,7 +27,7 @@ sudo apt upgrade
 sudo apt install haskell-platform
 sudo apt install haskell-stack
 ```
-Working with Haskell:
+## Working with Haskell:
 1) Open Ubuntu
 2) Type GHCI to start the Haskell compiler 
 3) Just to get a general idea of what the compiler does try a couple of these lines of code in your terminal:
