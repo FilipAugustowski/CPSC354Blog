@@ -1,9 +1,11 @@
+# Haskell Tutorial
+
 In the following blog post I will give a small tutorial on how to begin understanding and using Haskell. 
 
-Downloading Haskell Windows:
+## Downloading Haskell Windows:
 If you are on a windows machine than this tutorial is for you.
 
-1) First you need to get GHCI which is basically a terminal you can activate from your powershell that gives
+### 1) First you need to get GHCI which is basically a terminal you can activate from your powershell that gives
 you access to Haskell's compiler. 
 
 2) Open your powershell and be sure to run it as administrator 
