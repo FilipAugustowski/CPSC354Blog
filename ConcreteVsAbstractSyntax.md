@@ -22,21 +22,19 @@ mult (S(S O)) (S(S O)) = add (S(S O)) (mult (S O) (S(S O)))
 mult (S O) (S(S O)) = add (S(S O)) (mult (O) (S(S O))) 
 WE STOP HERE AND GET OUR RESULT (S(S(S(S(S(S(S(S O))))))))
 ```
-These trees are of course simple but start to become very long and convoluted thus thats why we treat abstract syntax as the preffered language for the compiler. On the other hand
-we have concrete syntax which should be the preffered language for humans.
+These trees are of course simple but start to become very long and convoluted thus thats why we treat abstract syntax as the preffered language for the compiler. There are more reason for this though: the abstract syntax has a very specific order of input, no steps can be skipped, and it is difficult to write a readable operation/function. 
+On the other hand we have concrete syntax which should be designed as the preffered language for humans.
 
 ### What does Concrete Syntax do and how does it work?
-Now to just set up my thought process we had in the abstract syntax equation mult (S(S(S(S O)))) (S(S O)), using this multiplication equation of course gets you the right answer
-but it clearly takes a while to do out all the work. I would rather like to calculate 4 * 2 = 8. To do this in practice with a programming language we develop the idea of 
-concrete syntax where I could quickly and easily write out calculations and not have to depend on the abstract definition of our functions. Instead we can use our current 
-way of doing calculations (using normal mathematical equations and symbols) by making use of parsing to translate our concrete syntax into abstract syntax so that the machine
-can compile the code and do our calculations. In the assingment we explored parsers by first writing a context free grammer as such:
+Now to just set up my thought process we had in the abstract syntax equation mult (S(S(S(S O)))) (S(S O)), using this multiplication equation of course gets you the right answer but it clearly takes a while to do all the work and steps. I would rather like to calculate 4 * 2 = 8. To do this in practice with a programming language we develop the idea of concrete syntax where I could quickly and easily write out calculations and not have to depend on the abstract definition of our functions. Instead we can use our current way of doing calculations (using normal mathematical equations and symbols) by making use of parsing to translate our concrete syntax into abstract syntax so that the machine can compile the code and do our calculations. In the assingment we explored parsers by first writing a context free grammer as such:
 
+```
 eval (Num n) = n
 eval (Plus n m) = (eval n) + (eval m)
 eval (Times n m) = (eval n) * (eval m)
 eval (Sub e1 e2) = (eval e1) - (eval e2)
+```
 
 This context free grammer is much nicer to work with as a programer because we no longer have to use succesor numbers and can instead use Haskell's built in functions. 
 This context free grammer was then used with BNFC to define a set of files that takes our expression data types and gives a propper final answer for calculations. Overall
-I think I have gotten the main idea right for the concrete vs abstract syntax however I stil do not think I understand how good of a tool BNFC is or what is really does.
+I think I have gotten the main idea right for the concrete vs abstract syntax however I stil do not think I understand how good of a tool BNFC is or what it really does. It seems that a whole course itself could be taught on why BNFC is so useful and how to design something similar to it.
