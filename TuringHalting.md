@@ -24,3 +24,4 @@ If there is a specific machine that gives a yes or no answer as to whether anoth
 
 
 https://en.wikipedia.org/wiki/Alan_Turing#Early_computers_and_the_Turing_test
+https://www.youtube.com/watch?v=macM_MtS_w4&ab_channel=Computerphile
