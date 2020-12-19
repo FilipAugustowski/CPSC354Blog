@@ -92,7 +92,7 @@ data NN = O | S NN
     Now how does this subtr function work? 
     If you look at the first two lines: subtr O n and subtr n O these are essentially saying: if we subtract any number great than 0
     from 0 than we get 0 (there are no negatives with natural numbers) and we also have that if we subtract 0 from any number that is greater than 0 than we get that number.
-    The third final line "subtr (S n) (S m) = subtr n m" is our recursive call. This is our recursive call, although you are just starting it is good to know for future 
+    The third final line "subtr (S n) (S m) = subtr n m" is our recursive call. Although you are just starting it is good to know for future 
     reference that the function's input on a recursive call should continue to decrease over each call. What we are doing here is kind of a different way of doing 
     subtraction than what one is used to. Instead of saying I take away 5 from 7, I am instead descreasing 5 and 7 by one each call by removing their leading S. As one can
     see the diffence between (S N) and n is that n is one less than (S N). Once one of our inputs into the subtr equation is 0 than we have our answer.
