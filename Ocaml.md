@@ -11,10 +11,19 @@ One issue with this however was that LCF could not run on varying types of opera
 
 So a French computer scientist (this is important as a French team is what spearheaded Ocaml), Gérard Huet, chose to make LCF compatible with Lisp compilers such as MacLisp, FranzLisp, LeLisp, and ZetaLisp. Lisp just for background is the second oldest high level programming language developed; it is a year younger than ForTran. With this more people like Guy Cousineau and Larry Paulson began to contribute by adding a compiler, algebraic data types, and pattern matching. The next big development that brought Guy Cousineau to want to develop a new implementation was when Pierre-Louis Curein developed a connection between Lambda Calclus and categorical combinators. This idea is the basis for Cousineau's work because he had scene the categorical combinators as a means of improving compilation for ML. From here a team at Formel was started and Guy Cousineau led the developement of OCaml. One of the key features of Ocaml when it was developped was it adaptibility and option to change syntax within the language; the main idea was to give a pathway to change the language as time went on or when the Standard ML was upgraded. 
 
-
+## Ocaml Vs Haskell
+Here I present a list of some main differences between Ocaml and Haskell
+  
+  1) Ocaml uses text to represent strings, while Ocaml uses arrays of bytes to represent strings. It is much harder to alter and use strings in Ocaml because there are no 
+  built in operations for these byte arrays.
+  2) IDE support for Ocaml is minimal 
+  3) Ocaml is multiparadigm so it has the extra functionality to apply imperative programming 
+  4) Ocaml is impure and strict while Haskell is pure and lazy. The pureness of Haskell is imposed by Haskell's type system while the strictness of Ocaml allows for more 
+  predictable outcomes. 
 https://en.wikipedia.org/wiki/ML_(programming_language)
 https://en.wikipedia.org/wiki/Categorical_abstract_machine
 https://caml.inria.fr/about/history.en.html
 https://en.wikipedia.org/wiki/Robin_Milner
 https://whatis.techtarget.com/definition/Multics-Multiplexed-Information-and-Computing-Service#:~:text=Multics%20(Multiplexed%20Information%20and%20Computing%20Service)%20was%20a%20mainframe%20time,GE)%2C%20and%20Bell%20Labs.
 https://en.wikipedia.org/wiki/Lisp_(programming_language)
+https://markkarpov.com/post/haskell-vs-ocaml.html#:~:text=If%20Haskell%20is%20a%20niche,OCaml%20community%20is%20much%20smaller.&text=For%20example%2C%20you%20would%20expect,simply%20an%20array%20of%20bytes.
