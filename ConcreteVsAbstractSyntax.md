@@ -13,7 +13,7 @@ to the fact that it shows in a general way how computation for the program will 
 ```
 mult (S n) m = add m (mult n m)
 ```
-One sees the simple defintion for multiplication in our abstract syntax. I feel that one could call this abstract as one has no information on the variables within the equation.
+One sees the simple definition for multiplication in our abstract syntax. I feel that one could call this abstract as one has no information on the variables within the equation.
 Furthermore, it makes sense how one could define a tree from the recursive calls of this function. Here is an example of multiplication:
 ```
 mult (S(S(S(S O)))) (S(S O)) = add (S(S O)) (mult (S(S(S O))) (S(S O)))
