@@ -20,6 +20,8 @@ Here I present a list of some main differences between Ocaml and Haskell
   3) Ocaml is multiparadigm so it has the extra functionality to apply imperative programming 
   4) Ocaml is impure and strict while Haskell is pure and lazy. The pureness of Haskell is imposed by Haskell's type system while the strictness of Ocaml allows for more 
   predictable outcomes. 
+  
+Sources:
 https://en.wikipedia.org/wiki/ML_(programming_language)
 https://en.wikipedia.org/wiki/Categorical_abstract_machine
 https://caml.inria.fr/about/history.en.html
