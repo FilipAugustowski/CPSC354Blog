@@ -2,7 +2,7 @@
 
 Over the past week in Programming Languages we have learned about Abstract Reduction Systems (ARS) using Lambda Calculus as the model of rules to abstract. We learned that 
 ARSs that are confluent and terminating are sound abstract models for an algorithm or a programming language. At this point, we have coded a calculator that has an interpreter 
-thus making it easier for humans to use/read and it perserves readability for our machine. Now, the discrete mathematics that comes with an ARS seems to make sense to me, but 
+thus making it easier for humans to use/read and it preserves readability for our machine. Now, the discrete mathematics that comes with an ARS seems to make sense to me, but 
 I wanted to explore how this will help us with coding in and of itself. 
 
 To start this I think I would like to go over why confluence and termination are highlighted and so important. Confluence was covered less so than termination in the lecture
@@ -19,7 +19,7 @@ not expected to learn this in class, however the connection between the way one 
 fundamentals of programming. 
 
 Termination is when we have an ARS that only allows calculations that actually terminate. Once again we are trying to remove ambiguity from our programming language and make it so
-that the program's recursion continuosly produces smaller values and that eventually we hit a base case. If we have an infite loop from any program than the system using the 
+that the program's recursion continuously produces smaller values and that eventually we hit a base case. If we have an infinite loop from any program than the system using the 
 language is sure to fail like what was described with Windows earlier on. To illustrate the importance of termination I would like to you use a game design example. If you 
 are using Unity or any sort of game engine you will have a player movement script for example, often the player movement script must take in a direction (from input) 
 and a magnitude of force (predetermined) to produce a velocity which is then applied so that the character moves. The collection of the input happens a few times per second, if
@@ -27,6 +27,6 @@ at any point our calculation of velocity does not terminate than the character a
 function will break such as checking if the player is grounded, rotating the player to where they want to look, among others. There have been many times in the past where
 I will create a function that does not terminate to a value or I create a loop that does not terminate and it has actually made my computer crash. I find that it is very 
 interesting that these general concepts expand to all parts of the coding world. I think the only thing that I am unsure of is how an ARS takes form in a program, does it 
-takes its form in the parser, the interpreter, in normal code, or the systen as a whole is an ARS and together its elements work with one another to justify this definition.
+takes its form in the parser, the interpreter, in normal code, or the system as a whole is an ARS and together its elements work with one another to justify this definition.
 
 Sources: https://ir.cwi.nl/pub/29552/1901.10773.pdf (1)
